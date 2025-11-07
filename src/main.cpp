@@ -8,18 +8,13 @@ int main() {
     Octagon<int> Octagon({0, 0}, {1, 0}, {2, 1}, {3, 2}, {2, 3}, {1, 4}, {0, 4}, {-1, 3});
     Triangle<int> triangle({0, 0}, {2, 0}, {1, 2});
     Square<int> square({0, 0}, {2, 0}, {2, 2}, {0, 2});
-
     std::cout << "Octagon: ";
     octagon.print(std::cout);
-
     std::cout << "Traingle: ";
     triangle.print(std::cout);
-
     std::cout << "Square: ";
     square.print(std::cout);
-
     std::cout << std::endl;
-
     Array<int> array(3);
     array.addFigure(std::make_shared<Octagon<int>>(octagon));
     array.addFigure(std::make_shared<Triangle<int>>(triangle));
